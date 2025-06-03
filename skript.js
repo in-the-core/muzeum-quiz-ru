@@ -373,9 +373,7 @@ function endQuiz() {
     
     questionElement.style.display = 'none';
     answersElement.style.display = 'none';
-    endMessageElement.innerHTML = `Забрать свой сертификат о прохождении викторины можешь здесь 
-                                <br> <img src='./qr-code.png' class= 'end-image'> 
-                                <br> <p class="qr-code"> сканируй qr-код и следуй инструкциям </p>`;
+    
     endMessageElement.style.display = 'block';
     scoreElement.textContent = "Ваш счет: " + score + " из " + questions.length;
     scoreElement.style.display = 'block';
@@ -389,7 +387,8 @@ function endQuiz() {
                                     <br> Продолжай в том же духе и тогда ты сможешь открыть свой музей или организовать выставку художников 
                                     <br> От 5 до 7 – хороший результат, ты точно знаешь основные понятия в искусстве <br> и можешь отличить Сальвадора Дали от Ивана Айвазовского. 
                                     <br> Приходи к нам на экскурсии, чтобы узнать больше об истории искусств
-                                    <br> От 0 до 4 – ты явно слышал про чёрный квадрат Малевича и что у Ван Гога не было уха.';
+                                    <br> От 0 до 4 – ты явно слышал про чёрный квадрат Малевича и что у Ван Гога не было уха.`;
+    
     endDescriptionElement.style.display = 'block';
 
     restartButton.style.display = 'block';
