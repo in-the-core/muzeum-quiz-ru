@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Викторина в музее</title>
+</head>
+<body>
+    <div class="container">
+        <div class="intro-text" id="intro-text">
+            <b>Привет, друг!</b>
+            <br>Перед тобой увлекательная викторина об изобразительном искусстве.
+            Ты не только узнаешь интересные факты <br>о художниках, направлениях и жанрах,
+            но и проверишь свои знания, ответив на 10 занимательных вопросов.
+            <br>В конце тебя будет ждать результат,
+            а если захочешь пройти заново, то просто нажмёшь на кнопку “начать снова”.
+            <br>Мы подготовим для тебя сертификат об участии в музейной викторине, 
+            а чтобы его забрать, <br>нужно будет отсканировать <b>qr-код</b> и следовать инструкциям.<br><br>
+           <b>Ну что, начнём?</b>
+
+        </div>
+        <div id="end-description" style="display: none;"></div>
+        <div id="description" style="display: none;"></div>
+        <button class="start-btn" id="start-btn">Начать</button>
+        <div class="question" id="question" style="display: none;"></div>
+        <div class="answers" id="answers" style="display: none;"></div>
+        <div class="end-message" id="end-message" style="display: none;"></div>
+        <button class="restart-btn" id="restart-btn" style="display: none;">Начать снова</button>
+        <div class="score" id="score" style="display: none;"></div>
+        <div id="extra-description" style="display:none;"></div>
+        <button id="next-btn" style="display:none;">Продолжить</button>
+    </div>
+    <script src="./skript.js"></script>
+</body>
+</html>

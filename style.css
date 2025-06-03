@@ -1,0 +1,169 @@
+/* <style> */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(./background.jpg);
+    background-size: 200% 100%;
+    background-repeat: repeat-x;
+    animation: slide 60s linear infinite;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.container {
+    background: rgba(139, 221, 233, 0.663);
+    border-radius: 15px;
+    padding: 60px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    width: auto;
+    max-width: auto;
+    height: auto;
+    text-align: center;
+}
+.question {
+    font-weight: 650;
+    font-size: 1.9em;
+    margin-bottom: 10px;
+}
+.answers {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    
+}
+.answer {
+    background-color: #eeeeeec4;
+    padding: 10px; /* Уменьшить отступы для лучшего контроля размера */
+    border-radius: 10px;
+    margin: 10px; /* Это контролирует расстояние между кнопками */
+    height: 200px; /* Фиксированная высота кнопок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    position: relative;
+    transition: background-color 0.3s;
+    flex: 2; /* Убедитесь, что элементы равномерно распределяются */
+}
+.answer img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+.answer:hover {
+    background-color: #ddd;
+}
+@media (max-width: 600px) {
+    .answer {
+        width: 100%; /* Уменьшить размер кнопок на меньших экранах */
+        height: auto;
+    }
+}
+.correct {
+    background-color: lightgreen !important;
+}
+.incorrect {
+    background-color: salmon !important;
+}
+.end-message {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.start-btn, .restart-btn, #next-btn {
+    background-color: #2e9077;
+    color: white;
+    padding: 40px 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.start-btn:hover, .restart-btn:hover {
+    background-color: #5a72e0;
+}
+.score {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.restart-btn, #next-btn {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;        
+}
+.intro-text {
+    line-height: 45px;
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 20px; /* Отступ снизу от текста */
+}
+#description {
+    line-height: 33px;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 15px; /* Отступ снизу от текста */
+}
+#extra-description {
+    line-height: 33px;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 15px; /* Отступ снизу от текста */
+}
+.answer-image {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+    max-width: 200px; 
+    object-fit: cover;
+}
+.extraDescription-image{
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    max-height: 350px;
+    max-width: 350px;
+    object-fit: cover;
+}
+.end-image {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px; 
+    object-fit: cover;
+}
+.what {
+    font-weight: 650;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.extraDescript {
+    font-weight: 650;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.answer-images{
+    padding-top: 20px;
+    width: auto;
+    height: auto;
+    max-height: 250px;
+    max-width: 250px; 
+    object-fit: cover;
+}
+.qr-code {
+    font-size: 15px;
+}
+/* </style> */
